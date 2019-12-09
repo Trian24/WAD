@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
+        <style>
+            body{
+                font-family: 'Red Hat Display', sans-serif;
+            }
+            .bg-img-cover{
+                background-position: center;
+                background-size: cover;
+                border-radius: 0;
+                background-repeat: no-repeat;
+            }
+            a {
+                background:rgba(0, 151, 19, 0);
+                color:rgba(0, 151, 19, 0);
+            }
+            a:visited {
+                background:rgba(0, 151, 19, 0);
+                color:rgba(0, 151, 19, 0);
+            }
+            a:hover, a:active, a:focus {
+                background:rgba(128, 128, 128, 0.6);
+                color:rgba(0, 151, 19, 0);
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--Navbar-->
+        <div class="navbar navbar-expand-sm bg-light navbar-light">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="font-size: large;">Berbagi.com</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#">Nama</a>
+                </li>
+            </ul>
+        </div>
+        <!--Profile-->
+        <div style="padding:2% 5%">
+            <div class="card bg-img-cover" style="background-image: url(2.jpg); height: 10vw; width:10vw; border-radius: 100%; overflow: hidden; float:left" >
+                <div class="card-body"></div>
+                <a href="#" style="height: 50%;"><div class="card-footer">JSANDKJASKDJBAS</div></a>    
+            </div><br><br>
+            <h2 style="float:left; padding-left: 2vw;">Nama Orang</h2>
+            <div style="clear:both; padding-bottom: 5vw;"></div>
+        <!--Card Navbar-->
+            <div class="card" style="clear: both;">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#articles" role="tab" aria-controls="articles" aria-selected="true">
+                                Written Articles
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#posts" role="tab" aria-controls="posts" aria-selected="false">
+                                Posts
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#statistics" role="tab" aria-controls="statistics" aria-selected="false">
+                                Statistics
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    <!--Card content-->
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="articles" role="tabpanel">
+                            <h4>Tes</h4>
+                        </div>
+
+                        <div class="tab-pane" id="posts" role="tabpanel">
+                            <h4>Tes1</h4>
+                        </div>
+
+                        <div class="tab-pane" id="statistics" role="tabpanel">
+                            <h4>Tes2</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </body>
+
+    <script>
+        $('#bologna-list a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+        })
+    </script>
+</html>
